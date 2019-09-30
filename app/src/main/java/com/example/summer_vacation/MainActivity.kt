@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        service.getUser("square")
+        service.getUser("yuhi-dosei")
             .enqueue(object : Callback<User> {
                 override fun onResponse(call: Call<User>, response: Response<User>) {
                     if (response.isSuccessful) { // ステータスコード200番以上300番未満のときtrue
